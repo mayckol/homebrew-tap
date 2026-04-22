@@ -5,21 +5,21 @@
 class Bender < Formula
   desc "Spec-driven scaffold for Claude Code — bender CLI"
   homepage "https://github.com/mayckol/ai-bender"
-  version "0.22.0"
+  version "0.23.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mayckol/ai-bender/releases/download/v0.22.0/bender_v0.22.0_darwin-amd64.tar.gz"
-      sha256 "0ecdc2488b9b1f2aa25a31150a11136ade1c60994fa5b73c98e4047987780ad3"
+      url "https://github.com/mayckol/ai-bender/releases/download/v0.23.0/bender_v0.23.0_darwin-amd64.tar.gz"
+      sha256 "13c897518f95f4ce6d2644bfcdf67395cb5c18d2a45b88d242a69c9b37dd61d1"
 
       define_method(:install) do
         bin.install "bender"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mayckol/ai-bender/releases/download/v0.22.0/bender_v0.22.0_darwin-arm64.tar.gz"
-      sha256 "8b45ae66124da1bb4d50d9f8dd1caaa757494f0dc428aac570d4aa0482d05d86"
+      url "https://github.com/mayckol/ai-bender/releases/download/v0.23.0/bender_v0.23.0_darwin-arm64.tar.gz"
+      sha256 "28f19007c01d4b1c713e43457c9e917e83e4aea57c6b6bdff41288069bc50f74"
 
       define_method(:install) do
         bin.install "bender"
@@ -29,15 +29,15 @@ class Bender < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mayckol/ai-bender/releases/download/v0.22.0/bender_v0.22.0_linux-amd64.tar.gz"
-      sha256 "ecf77241ed48996358cad0f620a4e9a404e1e110c4b8a1a1b25f66fbbb2b8582"
+      url "https://github.com/mayckol/ai-bender/releases/download/v0.23.0/bender_v0.23.0_linux-amd64.tar.gz"
+      sha256 "0ec60ce8257ca62845acb6b856ba6ccbcb5b615a53976a9e83e5a9fee6ca3828"
       define_method(:install) do
         bin.install "bender"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mayckol/ai-bender/releases/download/v0.22.0/bender_v0.22.0_linux-arm64.tar.gz"
-      sha256 "4f785cc2c2ea5d5433b7a465b4a9a0279960986bc0bc7c363a395b28351e633a"
+      url "https://github.com/mayckol/ai-bender/releases/download/v0.23.0/bender_v0.23.0_linux-arm64.tar.gz"
+      sha256 "3933d70eb8a556421f5207e801a5b7c53103e024a8e1e55e516636505510a14f"
       define_method(:install) do
         bin.install "bender"
       end
