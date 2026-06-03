@@ -1,8 +1,8 @@
 cask "fftracking" do
-  version "0.4.1"
-  sha256 "87b7d74169e83ff5653d1f2e5cec83571ca31528bb905c66b8dd90f3b120044c"
+  version "0.4.2"
+  sha256 "7f8df7fc05eba079e01d9a5804eae437df6883cce6d4444177de870863604c99"
 
-  url "https://github.com/mayckol/fftracking/releases/download/v#{version}/fftracking_#{version}_aarch64.dmg"
+  url "https://github.com/mayckol/fftracking/releases/download/v#{'#'}{version}/fftracking_#{'#'}{version}_aarch64.dmg"
   name "fftracking"
   desc "Local file-history & breaking-point tracker"
   homepage "https://github.com/mayckol/fftracking"
@@ -11,6 +11,11 @@ cask "fftracking" do
   depends_on arch: :arm64
 
   app "fftracking.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{'#'}{appdir}/fftracking.app"]
+  end
 
   zap trash: [
     "~/Library/Application Support/com.fftracking.app",
