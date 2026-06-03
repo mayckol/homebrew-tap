@@ -1,6 +1,6 @@
 cask "fftracking" do
-  version "0.5.3"
-  sha256 "9f160b80e34006a2a25f8b63745fe52adb27e3e24ebfc74b0db676b0387edbfd"
+  version "0.5.4"
+  sha256 "b6e1df348bea335c439beb0071e1f1d4eabe39434293f8441dedf4cc7ff593a7"
 
   url "https://github.com/mayckol/fftracking/releases/download/v#{version}/fftracking_#{version}_aarch64.dmg"
   name "fftracking"
@@ -9,6 +9,9 @@ cask "fftracking" do
 
   depends_on macos: ">= :big_sur"
   depends_on arch: :arm64
+  # Pull in the headless CLI (+ MCP server) so 'brew install --cask
+  # fftracking' also puts 'fft' on PATH, matching the install script.
+  depends_on formula: "mayckol/tap/fft"
 
   app "fftracking.app"
 
