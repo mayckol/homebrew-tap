@@ -12,6 +12,8 @@ cask "fftracking" do
 
   app "fftracking.app"
 
+  # Unsigned/ad-hoc build: strip the download quarantine on install so
+  # the app opens on a double-click instead of Gatekeeper blocking it.
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/fftracking.app"]
