@@ -1,6 +1,6 @@
 cask "fftracking" do
-  version "0.5.0"
-  sha256 "9b331130790141e9793a83ca6e210ebff617af9331ef41a131f5f99c47a45a0d"
+  version "0.5.1"
+  sha256 "edb90af68aa762c666fe284bcd8bbe213cf55610edbeebb19fa39cf9b1cb8af6"
 
   url "https://github.com/mayckol/fftracking/releases/download/v#{version}/fftracking_#{version}_aarch64.dmg"
   name "fftracking"
