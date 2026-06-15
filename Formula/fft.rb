@@ -1,7 +1,7 @@
 class Fft < Formula
   desc "Headless CLI + MCP server for fftracking local history"
   homepage "https://github.com/mayckol/fftracking"
-  version "0.8.6"
+  version "0.8.7"
 
   on_macos do
     url "https://github.com/mayckol/fftracking/releases/download/v#{version}/fft-aarch64-apple-darwin"
