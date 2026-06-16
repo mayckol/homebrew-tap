@@ -1,15 +1,15 @@
 class Fft < Formula
   desc "Headless CLI + MCP server for fftracking local history"
   homepage "https://github.com/mayckol/fftracking"
-  version "1.0.3"
+  version "1.0.4"
 
   on_macos do
     url "https://github.com/mayckol/fftracking/releases/download/v#{version}/fft-aarch64-apple-darwin"
-    sha256 "3572fb80fae5441c678980348aabe1085e28bd6c20600183787912b17cfd056b"
+    sha256 "a4f919852524c55791d31f94ff02da65f86904a3bf1151df9127f6b54541ebb8"
   end
   on_linux do
     url "https://github.com/mayckol/fftracking/releases/download/v#{version}/fft-x86_64-unknown-linux-gnu"
-    sha256 "bc5faf27b9620bdcc15e716fb92c3baab8b951b43fa0e23a30333c1cb6a33d08"
+    sha256 "eee976ba22cabfd88ccb881b3d42a4a616ab09686ce0614b78c93d10757d2bcc"
   end
 
   def install
