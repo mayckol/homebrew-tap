@@ -1,8 +1,8 @@
 cask "fftracking" do
-  version "1.0.17"
-  sha256 "b3c00c2a1c701f77d438a20bc23bc6a70ea38e4071cb5c133fd827e28d47a4b5"
+  version "1.0.18"
+  sha256 "df3b99c930c24429258d3750aa1d30f192af447278975a8d3201f092c6262093"
 
-  url "https://github.com/mayckol/fftracking/releases/download/v#{version}/fftracking_1.0.17_aarch64.dmg"
+  url "https://github.com/mayckol/fftracking/releases/download/v#{version}/fftracking_1.0.18_aarch64.dmg"
   name "fftracking"
   desc "Local file-history & breaking-point tracker"
   homepage "https://github.com/mayckol/fftracking"
