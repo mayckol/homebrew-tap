@@ -1,8 +1,8 @@
 cask "mcr" do
-  version "0.3.2"
-  sha256 "1aac5ba12cd545c3f29ea28685579588a357986d9b1276f50745957d74247162"
+  version "0.3.3"
+  sha256 "8cc537958d82ea3b15f8c4393ef05191cfc0d5cf7a26c5dabec6bab14c0da0dd"
 
-  url "https://github.com/mayckol/mcr/releases/download/v#{version}/MCR_0.3.2_aarch64.dmg"
+  url "https://github.com/mayckol/mcr/releases/download/v#{version}/MCR_0.3.3_aarch64.dmg"
   name "MCR"
   desc "Three-pane visual git merge editor"
   homepage "https://github.com/mayckol/mcr"
