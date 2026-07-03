@@ -1,6 +1,6 @@
 cask "mcr" do
   version "0.3.2"
-  sha256 "PLACEHOLDER"
+  sha256 "1aac5ba12cd545c3f29ea28685579588a357986d9b1276f50745957d74247162"
 
   url "https://github.com/mayckol/mcr/releases/download/v#{version}/MCR_0.3.2_aarch64.dmg"
   name "MCR"
